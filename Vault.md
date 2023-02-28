@@ -39,4 +39,13 @@ contract Vault {
   
 -  使用ethers.js来读取插槽里面的数据
 
+  所有链上数据都是公开透明的，所以即使是没有被设置为public的数据，我们也可以用`getStorageAt`的方法来进行读取。这里涉及到了solidity的内存分派。
+  
+  但是就本题而言，我们仅仅需要读取slot1的值就可以了。因为bool和bytes32均占据一个插槽
+
+`await provider2.getStorageAt("0x42B5fdd4Ba45aE453994cE8cff7aAB7fd8669730", 1);`
+
+最后成功解锁了vault，走上了人生巅峰
+
+
   
