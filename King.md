@@ -5,7 +5,7 @@
 
 [King](https://ethernaut.openzeppelin.com/level/0x725595BA16E76ED1F6cC1e1b65A88365cC494824)
 
-```sol
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -44,7 +44,7 @@ contract King {
 
 以下是攻击合约的相关代码
 
-```sol
+```solidity
 contract Regicide {
   constructor(address addr_) payable  {
     (bool result, ) = payable(addr_).call{value: msg.value}("");
