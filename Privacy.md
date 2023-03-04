@@ -49,7 +49,7 @@ function convert(bytes32 val) external pure returns(bytes16) {
 
 ```
 
-获得bytes16转换后的结果：`0x723cee7be0c9a35c8aaf21d433946d8c`
+获得bytes16转换后的结果：`0xe54d823d82467f377a7a556374e81e67`
 
 
 
